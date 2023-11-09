@@ -1,12 +1,9 @@
 import os
 import time
-
 import neat
 
 from commander import Commander
 
-HEIGHT = 728
-Y_POS = HEIGHT/2
 GENERATIONS = 1000
 
 if __name__ == '__main__':

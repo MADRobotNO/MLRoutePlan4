@@ -28,8 +28,9 @@
 
 - Fitness function:
   - factor = 0.0002
-  - 1 - (time used * factor) - (battery level * factor)
+  - stop factor = 0.02
+  - 1 - (time used * factor) - (battery level * factor) - (number of stops * stop_factor)
 
 
-- Number of generations : 100
-- Population size: 20
+- Number of generations : 1000
+- Population size: 100
