@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from position import Position
+from Models.position import Position
 
 
 class IPoint(ABC):

@@ -1,7 +1,9 @@
-import route
-from car import Car
-from charger import Charger
-from route import Route, MAX_DISTANCE
+import pickle
+from datetime import datetime
+
+from Models.car import Car
+from Models.charger import Charger
+from Models.route import Route, MAX_DISTANCE
 import neat
 
 
@@ -178,7 +180,15 @@ class Commander:
         car = self.get_car_by_genome_id(best_genome.key)
         print(car.print_car_info())
 
-        self.test_neat(best_net)
+        user_input = input("Would You like to save model? (If Yes input Y, otherwise input anything. Then press Enter): ")
+
+        if user_input.upper() == 'Y':
+            now_datetime = datetime.now().strftime("%d%m%Y_%H%M%S")
+            with open(f"ml_models/{now_datetime}.pickle", "wb") as f:
+                pickle.dump(winner, f)
+            print(f"Model saved in ml_models/{now_datetime}.pickle")
+
+        return winner
 
 
     def get_car_by_genome_id(self, car_id):

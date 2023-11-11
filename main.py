@@ -4,7 +4,7 @@ import neat
 
 from commander import Commander
 
-GENERATIONS = 1000
+GENERATIONS = 100
 
 if __name__ == '__main__':
     start_time = time.ctime()
@@ -22,7 +22,9 @@ if __name__ == '__main__':
     population.add_reporter(neat.StdOutReporter(True))
     stats = neat.StatisticsReporter()
     population.add_reporter(stats)
+    population.add_reporter(neat.Checkpointer(10, filename_prefix='ML_Models/Checkpoints/neat-checkpoint-'))
 
     commander = Commander(manual=True)
     commander.get_route().print_route_info()
+
     commander.train_neat(config, population, GENERATIONS)

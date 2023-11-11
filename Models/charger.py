@@ -1,6 +1,6 @@
 import random
-from point import IPoint
-from position import Position
+from Models.point import IPoint
+from Models.position import Position
 
 
 class Charger(IPoint):

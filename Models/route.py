@@ -1,8 +1,8 @@
 import random
 
-import car
-from charger import Charger
-from point import Point
+import Models.car as car
+from Models.charger import Charger
+from Models.point import Point
 
 MAX_DISTANCE = 999
 MIN_DISTANCE_BETWEEN_CHARGERS = 3

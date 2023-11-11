@@ -1,4 +1,4 @@
-from position import Position
+from Models.position import Position
 
 CAR_RANGE = 560
 BATTERY_SIZE_IN_KWH = 81
