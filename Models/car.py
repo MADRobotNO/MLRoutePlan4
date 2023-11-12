@@ -65,16 +65,24 @@ class Car:
         return self.__speed_km_h
 
     def print_car_info(self):
-        print(f"##### Car id {self.car_id} - start #####\n")
+        print(f"####### Car id {self.car_id} - start #######")
         print(f"Speed: {self.__speed_km_h}km/h")
         print(f"Battery: {self.__current_battery_level:.2f}%")
         print(f"Distance traveled: {self.get_distance_traveled()}km")
-        print(f"Total time used: {self.get_time_used_in_min()} minutes, {self.get_time_used_in_min()/60:.2f} hours")
-        print(f"Charging time: {self.__total_charging_time:.2f} minutes, {self.__total_charging_time/60:.2f} hours")
-        print(f"Driving time: {(self.get_time_used_in_min() - self.__total_charging_time):.2f} minutes, "
-              f"{(self.get_time_used_in_min() - self.__total_charging_time)/60:.2f} hours")
+        print(f"Total time used: {self.get_time(self.get_time_used_in_min())[0]} hours "
+              f"{self.get_time(self.get_time_used_in_min())[1]} minutes")
+        print(f"Charging time: {self.get_time(self.__total_charging_time)[0]} hours "
+              f"{self.get_time(self.__total_charging_time)[1]} minutes, ")
+        print(f"Driving time: {self.get_time(self.get_time_used_in_min() - self.__total_charging_time)[0]} hours "
+              f"{self.get_time(self.get_time_used_in_min() - self.__total_charging_time)[1]} minutes, ")
         print(f"Charging stops: {self.__charging_stops}")
-        print(f"\n##### Car info - end #####\n")
+        print(f"####### Car info - end #######\n")
+
+    @staticmethod
+    def get_time(time_in_minutes):
+        hours = int(time_in_minutes/60).__floor__()
+        minutes = int(((time_in_minutes/60) % 1)*60)
+        return hours, minutes
 
     def charge_battery_to_percentage(self, target_percentage, debug=False):
         charging_time = 0
