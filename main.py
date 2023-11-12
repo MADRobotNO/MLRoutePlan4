@@ -54,5 +54,4 @@ if __name__ == '__main__':
     if number_of_tests > 0:
         print("\n===== TESTS =====")
         passed_tests = commander.test_neat(config, winner, number_of_tests, add_manual_routes=True)
-        print(f"\nTOTAL PASSED TESTS: {passed_tests}/{number_of_tests}")
 

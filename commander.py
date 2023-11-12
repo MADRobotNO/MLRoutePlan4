@@ -167,7 +167,7 @@ class Commander:
                     f"Car FAILED test and did not reached the target. Traveled distance "
                     f"{car.get_distance_traveled()}/{route.route_length}km")
             car.reset()
-
+        print(f"\nTOTAL PASSED TESTS: {passed_tests}/{len(self.__test_routes)}")
         return passed_tests
 
     @staticmethod
