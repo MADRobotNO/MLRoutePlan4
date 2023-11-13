@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 import neat
 from Routes.TrainRoutes import generate_train_routes
-from commander import Commander
+from Services.commander import Commander
 
 
 if __name__ == '__main__':
@@ -53,5 +53,6 @@ if __name__ == '__main__':
 
     if number_of_tests > 0:
         print("\n===== TESTS =====")
+        print(f"Number of tests: {number_of_tests} + 2 additional tests for references")
         passed_tests = commander.test_neat(config, winner, number_of_tests, add_manual_routes=True)
 

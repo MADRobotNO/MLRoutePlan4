@@ -138,16 +138,18 @@ class Commander:
                              normalized_distance_to_next_station, normalized_time_used]
 
                 nn_output = net.activate(nn_inputs)
-
+                print(f"Charger {charger.charger_id}")
                 if nn_output[0] > 0.5:  # Stop at the station if the output is greater than 0.5
-                    car.charge_battery_to_percentage(self.map_to_output_range(nn_output[1]) * 100)
+                    car.charge_battery_to_percentage(self.map_to_output_range(nn_output[1]) * 100, debug=True)
+                else:
+                    print(f"No charging. Battery level {car.get_battery_level():.2f}%")
                 #print(f"Car {car.car_id} used currently: {car.get_time_used_in_min()} minutes "
                 #      f"to travel distance: {car.get_distance_traveled()}km "
                 #      f"with battery level {car.get_battery_level():0.2f}%")
 
             #print(f"Car reached destination with battery level {car.get_battery_level():0.2f}% "
             #      f"and time used for traveling {car.get_time_used_in_min()} minutes")
-
+            print()
             car.print_car_info()
             passed = car.get_distance_traveled() == route.route_length
 
