@@ -45,7 +45,7 @@ if __name__ == '__main__':
             pickle.dump(winner, f)
         print(f"Model saved in ml_models/{now_datetime}.pickle")
 
-    number_of_tests = input("Enter number of test You want to preform: ")
+    number_of_tests = input("Enter number of test You want to preform on model: ")
     try:
         number_of_tests = int(number_of_tests)
     except:
