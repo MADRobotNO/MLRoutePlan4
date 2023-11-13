@@ -15,22 +15,25 @@
   - Distance left
   - Current batter charge level
   - Distance to next charger
-  - (Battery needed to reach next charger)
   - Time used
-  - (Current speed)
 
 
 - NEAT output:
   - Should charge
   - Charge to level
-  - (Speed for next part)
 
 
 - Fitness function:
   - factor = 0.0002
-  - stop factor = 0.02
-  - 1 - (time used * factor) - (battery level * factor) - (number of stops * stop_factor)
+  - stop factor = ~~0.02~~ 0.04
+  - battery factor = 0.005
+  - 1 - (time used * factor) - (battery level * battery factor) - (number of stops * stop_factor)
 
 
-- Number of generations : 1000
-- Population size: 100
+- Population size: 100 
+
+
+## Refactors:
+- Added multiple routes for each genome in training process
+- Added battery factor (0.005) to fitness function
+- Changed stop factor to 0.04

@@ -1,0 +1,138 @@
+Config:
+num_hidden              = 0
+pop_size              = 100
+initial_connection      = full
+compatibility_threshold = 2.1
+
+1.
+GENERATIONS = 10
+
+Result:
+Speed: 100km/h
+Battery: 4.86%
+Distance traveled: 999km
+Total time used: 644 minutes, 10.73 hours
+Charging time: 44.91 minutes, 0.75 hours
+Driving time: 599.09 minutes, 9.98 hours
+Charging stops: 1
+
+11112023_151022.pickle
+
+2.
+GENERATIONS = 50
+
+Result:
+Speed: 100km/h
+Battery: 0.86%
+Distance traveled: 999km
+Total time used: 639 minutes, 10.65 hours
+Charging time: 39.98 minutes, 0.67 hours
+Driving time: 599.02 minutes, 9.98 hours
+Charging stops: 1
+
+11112023_151125.pickle
+
+2.
+GENERATIONS = 100
+
+Result:
+Speed: 100km/h
+Battery: 0.86%
+Distance traveled: 999km
+Total time used: 639 minutes, 10.65 hours
+Charging time: 39.98 minutes, 0.67 hours
+Driving time: 599.02 minutes, 9.98 hours
+Charging stops: 1
+
+11112023_150028.pickle
+
+3.
+GENERATIONS = 1000
+
+Result:
+Speed: 100km/h
+Battery: 0.86%
+Distance traveled: 999km
+Total time used: 639 minutes, 10.65 hours
+Charging time: 39.98 minutes, 0.67 hours
+Driving time: 599.02 minutes, 9.98 hours
+Charging stops: 1
+
+11112023_150229.pickle
+
+4.
+GENERATIONS = 5000
+
+Result:
+Speed: 100km/h
+Battery: 0.86%
+Distance traveled: 999km
+Total time used: 639 minutes, 10.65 hours
+Charging time: 39.98 minutes, 0.67 hours
+Driving time: 599.02 minutes, 9.98 hours
+Charging stops: 1
+
+11112023_150748.pickle
+
+==== WITH HIDDEN ON START ====
+Config:
+num_hidden              = 1
+pop_size              = 100
+initial_connection      = full_direct
+compatibility_threshold = 2.2
+
+5.
+GENERATIONS = 10
+
+Result:
+Speed: 100km/h
+Battery: 8.86%
+Distance traveled: 999km
+Total time used: 650 minutes, 10.83 hours
+Charging time: 50.93 minutes, 0.85 hours
+Driving time: 599.07 minutes, 9.98 hours
+Charging stops: 1
+
+11112023_151436.pickle
+
+6.
+GENERATIONS = 50
+
+Result:
+Speed: 100km/h
+Battery: 0.86%
+Distance traveled: 999km
+Total time used: 639 minutes, 10.65 hours
+Charging time: 39.98 minutes, 0.67 hours
+Driving time: 599.02 minutes, 9.98 hours
+Charging stops: 1
+
+11112023_151508.pickle
+
+7.
+GENERATIONS = 100
+
+Result:
+Speed: 100km/h
+Battery: 0.86%
+Distance traveled: 999km
+Total time used: 639 minutes, 10.65 hours
+Charging time: 39.98 minutes, 0.67 hours
+Driving time: 599.02 minutes, 9.98 hours
+Charging stops: 1
+
+11112023_151802.pickle
+
+8.
+GENERATIONS = 1000
+
+Result:
+Speed: 100km/h
+Battery: 0.86%
+Distance traveled: 999km
+Total time used: 639 minutes, 10.65 hours
+Charging time: 39.98 minutes, 0.67 hours
+Driving time: 599.02 minutes, 9.98 hours
+Charging stops: 1
+
+11112023_151916.pickle

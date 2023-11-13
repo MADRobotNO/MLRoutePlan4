@@ -1,17 +1,15 @@
 import random
-
 from Models.car import Car
-from Models.charger import Charger
 from Models.route import Route
 import neat
-
 from Routes.TestRoutes import generate_test_routes
 
 
 class Commander:
-    def __init__(self, factor=0.0002, factor_stops=0.02, width=1024, height=728, number_of_routes=5, routes=None):
+    def __init__(self, factor=0.0002, factor_battery=0.005, factor_stops=0.04, width=1024, height=728, number_of_routes=5, routes=None):
         self.__number_of_routes = number_of_routes
         self.__fitness_factor = factor
+        self.__fitness_factor_battery = factor_battery
         self.__fitness_factor_stops = factor_stops
         self.__width = width
         self.__height = height
@@ -25,11 +23,6 @@ class Commander:
 
     def get_routes(self):
         return self.__routes
-
-    # def __check_if_arrived_at_charger(self, car_x_pos):
-    #     for charger in self.__route.get_chargers():
-    #         if charger.get_pos().get_x() == car_x_pos:
-    #             return charger
 
     def evaluate_routes(self, genomes, config):
         for genome_id, genome in genomes:
@@ -88,7 +81,7 @@ class Commander:
                     genome.fitness += 0.0
                 else:
                     genome.fitness += (1 - (car.get_time_used_in_min() * self.__fitness_factor) -
-                                       (car.get_battery_level() * self.__fitness_factor) -
+                                       (car.get_battery_level() * self.__fitness_factor_battery) -
                                        (car.get_number_of_stops() * self.__fitness_factor_stops))
 
                 car.reset()

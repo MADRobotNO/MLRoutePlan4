@@ -1,0 +1,490 @@
+Config:
+num_hidden              = 0
+pop_size              = 100
+initial_connection      = full
+compatibility_threshold = 2.1
+
+1. GENERATIONS = 10
+
+FITNESS: 1.680607142857143
+File: 12112023_211914.pickle
+
+TOTAL PASSED TESTS: 8/12
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 89.64%
+Distance traveled: 737km
+Total time used: 9 hours 5 minutes
+Charging time: 1 hours 42 minutes,
+Driving time: 7 hours 22 minutes,
+Charging stops: 2
+####### Car info - end #######
+
+##### Route info - id: 2 #####
+Route length 1005km
+Number of chargers 14
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 43.93%
+Distance traveled: 1005km
+Total time used: 11 hours 48 minutes
+Charging time: 1 hours 45 minutes,
+Driving time: 10 hours 2 minutes,
+Charging stops: 2
+####### Car info - end #######
+
+2. GENERATIONS = 50 - Very good results
+
+FITNESS: 2.165092857142857
+File: 12112023_212013.pickle
+
+TOTAL PASSED TESTS: 12/12
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 3.71%
+Distance traveled: 737km
+Total time used: 7 hours 36 minutes
+Charging time: 0 hours 15 minutes,
+Driving time: 7 hours 21 minutes,
+Charging stops: 3
+####### Car info - end #######
+
+##### Route info - id: 2 #####
+Route length 1005km
+Number of chargers 14
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 4.18%
+Distance traveled: 1005km
+Total time used: 10 hours 54 minutes
+Charging time: 0 hours 51 minutes,
+Driving time: 10 hours 2 minutes,
+Charging stops: 4
+####### Car info - end #######
+
+3. GENERATIONS = 100 - Results dropped and are more inconsistent
+
+FITNESS: 2.12065
+File: 12112023_212153.pickle
+
+TOTAL PASSED TESTS: 11/12
+
+4. GENERATIONS = 200 - Very good results again
+
+FITNESS: 2.2404999999999995
+File: 12112023_212323.pickle
+
+TOTAL PASSED TESTS: 12/12
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 7.75%
+Distance traveled: 737km
+Total time used: 7 hours 35 minutes
+Charging time: 0 hours 13 minutes,
+Driving time: 7 hours 22 minutes,
+Charging stops: 2
+####### Car info - end #######
+
+##### Route info - id: 2 #####
+Route length 1005km
+Number of chargers 14
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 8.18%
+Distance traveled: 1005km
+Total time used: 10 hours 54 minutes
+Charging time: 0 hours 51 minutes,
+Driving time: 10 hours 2 minutes,
+Charging stops: 4
+####### Car info - end #######
+
+5. GENERATIONS = 500 - Big drop in results
+
+FITNESS: 1.8355214285714285
+File: 12112023_212641.pickle
+
+TOTAL PASSED TESTS: 10/12
+
+6. GENERATIONS = 1000 - Good results again
+
+FITNESS: 2.2463428571428565
+File: 12112023_212900.pickle
+
+TOTAL PASSED TESTS: 12/12
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 5.75%
+Distance traveled: 737km
+Total time used: 7 hours 34 minutes
+Charging time: 0 hours 12 minutes,
+Driving time: 7 hours 22 minutes,
+Charging stops: 2
+####### Car info - end #######
+
+##### Route info - id: 2 #####
+Route length 1005km
+Number of chargers 14
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 8.18%
+Distance traveled: 1005km
+Total time used: 10 hours 54 minutes
+Charging time: 0 hours 51 minutes,
+Driving time: 10 hours 2 minutes,
+Charging stops: 4
+####### Car info - end #######
+
+7. GENERATIONS = 2000 - Very good results - Best so far
+
+FITNESS: 2.2924999999999995
+File: 12112023_213403.pickle
+
+TOTAL PASSED TESTS: 12/12
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 3.75%
+Distance traveled: 737km
+Total time used: 7 hours 33 minutes
+Charging time: 0 hours 11 minutes,
+Driving time: 7 hours 22 minutes,
+Charging stops: 2
+####### Car info - end #######
+
+##### Route info - id: 2 #####
+Route length 1005km
+Number of chargers 14
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 6.18%
+Distance traveled: 1005km
+Total time used: 10 hours 52 minutes
+Charging time: 0 hours 50 minutes,
+Driving time: 10 hours 2 minutes,
+Charging stops: 4
+####### Car info - end #######
+
+8. GENERATIONS = 5000 - Not all test passed, but number of stops went down. Best fitness so far.
+
+FITNESS: 2.3545499999999997
+File: 12112023_214842.pickle
+
+TOTAL PASSED TESTS: 11/12
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 7.57%
+Distance traveled: 737km
+Total time used: 7 hours 33 minutes
+Charging time: 0 hours 12 minutes,
+Driving time: 7 hours 21 minutes,
+Charging stops: 1
+####### Car info - end #######
+
+##### Route info - id: 2 #####
+Route length 1005km
+Number of chargers 14
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 4.43%
+Distance traveled: 1005km
+Total time used: 10 hours 56 minutes
+Charging time: 0 hours 53 minutes,
+Driving time: 10 hours 2 minutes,
+Charging stops: 2
+####### Car info - end #######
+
+8. GENERATIONS = 10000 - Decrease in fitness and not all tests passed
+
+FITNESS: 2.3126928571428573
+File: 12112023_220715.pickle
+
+TOTAL PASSED TESTS: 11/12
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 13.75%
+Distance traveled: 737km
+Total time used: 7 hours 39 minutes
+Charging time: 0 hours 17 minutes,
+Driving time: 7 hours 21 minutes,
+Charging stops: 1
+####### Car info - end #######
+
+##### Route info - id: 2 #####
+Route length 1005km
+Number of chargers 14
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 10.32%
+Distance traveled: 1005km
+Total time used: 10 hours 39 minutes
+Charging time: 0 hours 37 minutes,
+Driving time: 10 hours 2 minutes,
+Charging stops: 3
+####### Car info - end #######
+
+=========================================================================================
+Config:
+num_hidden              = 1
+pop_size              = 100
+initial_connection      = full_direct
+compatibility_threshold = 2.1
+
+1. GENERATIONS = 10
+
+FITNESS: 1.3668357142857144
+File: 13112023_090807.pickle
+
+TOTAL PASSED TESTS: 11/32
+
+2. GENERATIONS = 20
+
+FITNESS: 1.5001071428571429
+File: 13112023_090840.pickle
+
+TOTAL PASSED TESTS: 6/32
+
+3. GENERATIONS = 50
+
+FITNESS: 1.7676500000000002
+File: 13112023_090923.pickle
+
+TOTAL PASSED TESTS: 32/32
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 39.71%
+Distance traveled: 737km
+Total time used: 8 hours 13 minutes
+Charging time: 0 hours 52 minutes,
+Driving time: 7 hours 21 minutes,
+Charging stops: 1
+####### Car info - end #######
+
+##### Route info - id: 2 #####
+Route length 1005km
+Number of chargers 14
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 54.32%
+Distance traveled: 1005km
+Total time used: 11 hours 30 minutes
+Charging time: 1 hours 27 minutes,
+Driving time: 10 hours 2 minutes,
+Charging stops: 2
+####### Car info - end #######
+
+4. GENERATIONS = 100
+
+FITNESS: 2.1083857142857143
+File: 13112023_090714.pickle
+
+TOTAL PASSED TESTS: 32/32
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 19.75%
+Distance traveled: 737km
+Total time used: 7 hours 42 minutes
+Charging time: 0 hours 20 minutes,
+Driving time: 7 hours 21 minutes,
+Charging stops: 1
+####### Car info - end #######
+
+##### Route info - id: 2 #####
+Route length 1005km
+Number of chargers 14
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 11.32%
+Distance traveled: 1005km
+Total time used: 11 hours 3 minutes
+Charging time: 1 hours 1 minutes,
+Driving time: 10 hours 2 minutes,
+Charging stops: 4
+####### Car info - end #######
+
+5. GENERATIONS = 200
+
+FITNESS: 1.8056
+File: 13112023_090615.pickle
+
+TOTAL PASSED TESTS: 9/32
+
+6. GENERATIONS = 500
+
+FITNESS: 2.233364285714286
+File: 13112023_091115.pickle
+
+TOTAL PASSED TESTS: 19/32
+
+7. GENERATIONS = 1000 - Best results
+
+FITNESS: 2.217257142857143
+File: 13112023_091325.pickle
+
+TOTAL PASSED TESTS: 32/32
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 21.64%
+Distance traveled: 737km
+Total time used: 7 hours 39 minutes
+Charging time: 0 hours 17 minutes,
+Driving time: 7 hours 21 minutes,
+Charging stops: 2
+####### Car info - end #######
+
+##### Route info - id: 2 #####
+Route length 1005km
+Number of chargers 14
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 14.32%
+Distance traveled: 1005km
+Total time used: 10 hours 39 minutes
+Charging time: 0 hours 37 minutes,
+Driving time: 10 hours 2 minutes,
+Charging stops: 2
+####### Car info - end #######
+
+8. GENERATIONS = 2000
+
+FITNESS: 2.4741428571428568
+File: 12112023_221847.pickle
+
+TOTAL PASSED TESTS: 18/32
+
+9. GENERATIONS = 5000
+
+FITNESS: 2.353885714285714
+File: 13112023_092105.pickle
+
+TOTAL PASSED TESTS: 28/32
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 5.57%
+Distance traveled: 737km
+Total time used: 7 hours 32 minutes
+Charging time: 0 hours 11 minutes,
+Driving time: 7 hours 21 minutes,
+Charging stops: 1
+####### Car info - end #######
+
+10. GENERATIONS = 10000
+
+FITNESS: 2.385564285714286
+File: 13112023_113807.pickle
+
+TOTAL PASSED TESTS: 28/32
+
+##### Route info - id: 1 #####
+Route length 737km
+Number of chargers 11
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 21.75%
+Distance traveled: 737km
+Total time used: 7 hours 44 minutes
+Charging time: 0 hours 22 minutes,
+Driving time: 7 hours 21 minutes,
+Charging stops: 1
+####### Car info - end #######
+
+##### Route info - id: 2 #####
+Route length 1005km
+Number of chargers 14
+##### Route info - end #####
+
+####### Car id 1 - start #######
+Speed: 100km/h
+Battery: 0.18%
+Distance traveled: 1005km
+Total time used: 10 hours 46 minutes
+Charging time: 0 hours 44 minutes,
+Driving time: 10 hours 2 minutes,
+Charging stops: 3
+####### Car info - end #######
