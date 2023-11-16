@@ -56,3 +56,21 @@ if __name__ == '__main__':
         print(f"Number of tests: {number_of_tests} + 2 additional tests for references")
         passed_tests = commander.test_neat(config, winner, number_of_tests, add_manual_routes=True)
 
+    user_input = input("Would You like to load model? (If Yes input Y, otherwise input anything. Then press Enter): ")
+
+    if user_input.upper() == 'Y':
+        filename = input("Enter filename: ")
+        with open(f"ml_models/{filename}", "rb") as f:
+            winner = pickle.load(f)
+        print(f"Model loaded")
+
+        number_of_tests = input("Enter number of test You want to preform on model: ")
+        try:
+            number_of_tests = int(number_of_tests)
+        except:
+            number_of_tests = 0
+
+        if number_of_tests > 0:
+            print("\n===== TESTS =====")
+            print(f"Number of tests: {number_of_tests} + 2 additional tests for references")
+            passed_tests = commander.test_neat(config, winner, number_of_tests, add_manual_routes=True)

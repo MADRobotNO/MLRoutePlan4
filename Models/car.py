@@ -89,6 +89,9 @@ class Car:
         current_charging_speed = 0
         previous_battery_level = self.__current_battery_level
 
+        if self.__current_battery_level > target_percentage:
+            return charging_time
+
         while self.__current_battery_level < target_percentage:
             # get current charging speed
             next_battery_level = 0

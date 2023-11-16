@@ -1,4 +1,8 @@
 # Route generator
+## Dependency:
+- Pickle
+- Neat-python
+- Random, Os, Time, DateTime, 
 
 ## Description:
 - Automatically generate route for a car
