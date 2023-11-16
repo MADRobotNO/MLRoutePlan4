@@ -6,7 +6,8 @@ from Routes.TestRoutes import generate_test_routes
 
 
 class Commander:
-    def __init__(self, factor=0.0002, factor_battery=0.005, factor_stops=0.04, width=1024, height=728, number_of_routes=5, routes=None):
+    def __init__(self, factor=0.0002, factor_battery=0.005, factor_stops=0.04, width=1024, height=728,
+                 number_of_routes=5, routes=None):
         self.__number_of_routes = number_of_routes
         self.__fitness_factor = factor
         self.__fitness_factor_battery = factor_battery
