@@ -23,7 +23,7 @@ if __name__ == '__main__':
     population.add_reporter(neat.StdOutReporter(True))
     stats = neat.StatisticsReporter()
     population.add_reporter(stats)
-    population.add_reporter(neat.Checkpointer(10, filename_prefix='ML_Models/Checkpoints/neat-checkpoint-'))
+    # population.add_reporter(neat.Checkpointer(10, filename_prefix='ML_Models/Checkpoints/neat-checkpoint-'))
 
     no_of_generations = int(input("Enter number of generations for training: "))
     try:
@@ -37,13 +37,13 @@ if __name__ == '__main__':
     commander.print_routes_info()
 
     winner = commander.train_neat(config, population, no_of_generations)
-    user_input = input("Would You like to save model? (If Yes input Y, otherwise input anything. Then press Enter): ")
+    #user_input = input("Would You like to save model? (If Yes input Y, otherwise input anything. Then press Enter): ")
 
-    if user_input.upper() == 'Y':
-        now_datetime = datetime.now().strftime("%d%m%Y_%H%M%S")
-        with open(f"ml_models/{now_datetime}.pickle", "wb") as f:
-            pickle.dump(winner, f)
-        print(f"Model saved in ml_models/{now_datetime}.pickle")
+    #if user_input.upper() == 'Y':
+    #    now_datetime = datetime.now().strftime("%d%m%Y_%H%M%S")
+    #    with open(f"ml_models/{now_datetime}.pickle", "wb") as f:
+    #        pickle.dump(winner, f)
+    #    print(f"Model saved in ml_models/{now_datetime}.pickle")
 
     number_of_tests = input("Enter number of test You want to preform on model: ")
     try:
@@ -56,21 +56,22 @@ if __name__ == '__main__':
         print(f"Number of tests: {number_of_tests} + 2 additional tests for references")
         passed_tests = commander.test_neat(config, winner, number_of_tests, add_manual_routes=True)
 
-    user_input = input("Would You like to load model? (If Yes input Y, otherwise input anything. Then press Enter): ")
 
-    if user_input.upper() == 'Y':
-        filename = input("Enter filename: ")
-        with open(f"ml_models/{filename}", "rb") as f:
-            winner = pickle.load(f)
-        print(f"Model loaded")
-
-        number_of_tests = input("Enter number of test You want to preform on model: ")
-        try:
-            number_of_tests = int(number_of_tests)
-        except:
-            number_of_tests = 0
-
-        if number_of_tests > 0:
-            print("\n===== TESTS =====")
-            print(f"Number of tests: {number_of_tests} + 2 additional tests for references")
-            passed_tests = commander.test_neat(config, winner, number_of_tests, add_manual_routes=True)
+    # user_input = input("Would You like to load model? (If Yes input Y, otherwise input anything. Then press Enter): ")
+    #
+    # if user_input.upper() == 'Y':
+    #     filename = input("Enter filename: ")
+    #     with open(f"ml_models/{filename}", "rb") as f:
+    #         winner = pickle.load(f)
+    #     print(f"Model loaded")
+    #
+    #     number_of_tests = input("Enter number of test You want to preform on model: ")
+    #     try:
+    #         number_of_tests = int(number_of_tests)
+    #     except:
+    #         number_of_tests = 0
+    #
+    #     if number_of_tests > 0:
+    #         print("\n===== TESTS =====")
+    #         print(f"Number of tests: {number_of_tests} + 2 additional tests for references")
+    #         passed_tests = commander.test_neat(config, winner, number_of_tests, add_manual_routes=True)
